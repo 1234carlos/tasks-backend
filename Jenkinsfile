@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage ("Just Testr") {
+        stage ("Build Backend") {
             steps {
-                bat "echo deu certo!"
+                bat "mvn packag -DskipTests=true"
             }
         }
     }
