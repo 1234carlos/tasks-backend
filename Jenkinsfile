@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Build Backend") {
             steps {
-                bat "mvn packag -DskipTests=true"
+                bat "mvn package -DskipTests=true"
             }
         }
     }
